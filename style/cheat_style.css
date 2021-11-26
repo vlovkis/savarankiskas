@@ -1,0 +1,20 @@
+body{
+    background-color: #FFD700;
+}
+
+.nav-item{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav .current a {
+    color: yellow !important;
+}
+
+.navbar-expand-lg .navbar-collapse{
+    justify-content: center;
+}
