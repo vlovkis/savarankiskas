@@ -2,29 +2,167 @@ body{
     background-color: #FFD700;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . . . . . . . . . ."
-      "function_name function_name function_name function_name function_name function_name function_name function_name function_name function_name function_name"
-      "code_snippet code_snippet code_snippet code_snippet code_snippet . preview preview preview preview preview"
-      "code_snippet code_snippet code_snippet code_snippet code_snippet . preview preview preview preview preview"
-      "code_snippet code_snippet code_snippet code_snippet code_snippet . preview preview preview preview preview"
-      "code_snippet code_snippet code_snippet code_snippet code_snippet . preview preview preview preview preview"
-      ". . . . . . . . . . .";
-    width: 100%;
-    height: 100%;
+.display-2{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    color: white;
+    font-weight: 400;
+    background: #00000073;
+    padding-left: 1%;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#pass{
+    flex-direction: column;
+}
+
+#passinput{
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.buttons-1 input[type=button]{
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #FFD700;
+    background: black;
+    width: 130px;
+    left: 80px;
+    position: relative;
+}
+
+
+.result button{
+    border: none;
+    height: 40px;
+    width: 175px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #FFD700;
+    background: black;
+}
+
+.buttons-1 p{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+#clicks{
+    font-weight: bold;
+}
+#clicks2{
+    font-weight: bold;
+}
+#clicks3{
+    font-weight: bold;
+}
+
+
+
+.navbar-nav li:first-child {
+    position: absolute;
+    left: 2%;
+    top: 1px;
+  }
+
+  .logo{
+    width: 40px;
+    position: absolute;
+}
+
+pre[class*=language-] {
+    background: #333 !important;
+    text-shadow: 0px !important;
+    border-radius: 25px;
+}
+
+code[class*=language-]{
+    text-shadow: none !important;
+    color: white !important;
+}
+
+.token.number{
+    color: white !important;
+}
+
+.token.operator{
+    background: none !important;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-style: solid;
+    border-width: 2px;
+    background-color: #FFD700;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px;
+    transition: 1s;
+    border-radius: 20px;
   }
   
-  .function_name { grid-area: function_name; }
+  #myBtn:hover {
+    background-color: #555;
+    transition: 1s;
+    color: white;
+    border-color: black
+  }
+
+.container {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 0px 10px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "name name name name name name name name name name name name"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result"
+      "snippet snippet snippet snippet snippet snippet result result result result result result";
+  }
   
-  .code_snippet { grid-area: code_snippet; }
+  .name { grid-area: name; text-align: center;}
   
-  .preview { grid-area: preview; }
+  .snippet { grid-area: snippet; margin-bottom: 50px;}
+  
+  .result { grid-area: result;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom:56px;
+    margin-top: 7px;
+    border-radius: 25px;
+    background: white;
+
+}
+  
   
 
 .nav-item{

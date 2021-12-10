@@ -2,9 +2,37 @@ body{
     background-color: #FFD700;
 }
 
+.navbar-nav li:first-child {
+    position: absolute;
+    left: 2%;
+    top: 1px;
+  }
+
+  .logo{
+    width: 40px;
+    position: absolute;
+}
+  
+
 .nav-item{
     font-size: 1em;
     font-weight: bold;
+}
+
+footer{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.display-2{
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    color: white;
+    font-weight: 400;
+    background: #00000073;
+    padding-left: 1%;
 }
 
 .navbar-dark .navbar-nav .nav-link {
